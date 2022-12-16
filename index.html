@@ -2,38 +2,101 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="./main.css">
-    <title>Traductor Kloverx</title>
+    <title>Álvaro Leiva Dermatólogo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="conatiner">
-        <div>
-            <div class="header">
-                <select class="first" id=""></select>
-                <button class="iconButton" id="change"><i class="fas fa-exchange-alt"></i></button>
-                <select class="second" id=""></select>
-            </div>
-            <div class="containerTextArea">
-                <div>
-                    <textarea class="fromText" placeholder="Ingrese Texto"></textarea>
-                    <div>
-                        <button class="read iconButton"><i class="fas fa-volume-up"></i></button>
-                        <button class="listen iconButton"><i class="fas fa-microphone"></i></button>
-                    </div>
-                </div>
-                <div>
-                    <textarea class="toText" placeholder="Ingrese Texto"></textarea>
-                    <div>
-                        <button class="read iconButton"><i class="fas fa-volume-up"></i></button>
-                    </div>
-                </div>
-            </div>
-            <button class="translate">Traducir</button>
+    <header class="header" id="inicio">
+        <img src="img/hamburguesa.svg" alt="" class="hamburguer">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#galeria">Video</a>
+            <a href="#expertos">Encuentranos</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">El cuidado de tu piel</h1>
+            <h2 class="eslogan">en las manos de un especialista</h2>
         </div>
-    </div>
-    <script src="./script.js" type="module"></script>
+    </header>
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">El ABCD del melanoma</h2>
+            <div>
+            <p>Las primeras etapas de un melanoma son casi <b>100% curables</b>, habla con el doctor si tienes <b>uno o más</b> de estos signos.</p>
+            <br></br>   <!--Necesario para que se vea bien-->
+            </div>
+            <div class="contenedor-servicio">                
+                <div>
+                    <img src="img/Melanoma A.jpg" style="width:100px;height:100px;">    <!--Necesario para que se vea bien-->
+                    <h3 class="NumeroCirculo"> <span class="number">A</span>Asimétrico</h3>
+                    <p>mitades diferentes.</p>
+                </div>
+                <div>
+                    <img src="img/Melanoma B.jpg" style="width:100px;height:100px;">    <!--Necesario para que se vea bien-->
+                    <h3 class="NumeroCirculo"> <span class="number">B</span>Borde</h3>
+                    <p>Irregular o difuso.</p>
+                </div>
+                <div>
+                    <img src="img/Melanoma C.jpg" style="width:100px;height:100px;">    <!--Necesario para que se vea bien-->
+                    <h3 class="NumeroCirculo"> <span class="number">C</span>Color</h3>
+                    <p>Más de uno.</p>
+                </div>
+                <div>
+                    <img src="img/Melanoma D.jpg" style="width:100px;height:100px;">    <!--Necesario para que se vea bien-->
+                    <h3 class="NumeroCirculo"> <span class="number">D</span>Diámetro</h3>
+                    <p>Más de 6mm.</p>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Video</h2>
+                <div class="contenedor-galeria">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rCxMfqHTkww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="imagen-light">
+            <img src="img/bx-x.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </section>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Encuentranos</h2>
+            <section class="experts">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.6479639364916!2d-70.11015038255616!3d-20.273429699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915214e6716de9ed%3A0x12a6d7472031e2ee!2sCalle%20Sta.%20Rosa%202734%2C%201130302%20Iquique%2C%20Alto%20Hospicio%2C%20Tarapac%C3%A1!5e0!3m2!1ses!2scl!4v1670125236292!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-cont">
+            <div class="contact-us">
+                <h2 class="brand">Kloverx</h2>
+                <p>Porque tus proyectos los hacemos realidad</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/feliiphitoox/"  title="facebook" target ="_blank" class="social-media-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </a>
+                <a href="https://twitter.com/kloverx2022"  title="twitter" target ="_blank"  class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="https://github.com/aunato/aunato"  title="github" target ="_blank"  class="social-media-icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.instagram.com/jeexxu/"  title="instagram" target ="_blank"  class="social-media-icon">
+                    <i class='bx bxl-instagram-alt bx-spin' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
