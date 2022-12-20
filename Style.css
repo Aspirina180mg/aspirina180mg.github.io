@@ -1,0 +1,306 @@
+/*
+Uso CSS    https://www.w3schools.com/css/default.asp
+Propiedades CSS https://www.w3schools.com/cssref/index.php
+Paleta de Colores    https://paletton.com/#uid=13A0u0k6+Pv0-+J3lWUbfESfYuz
+Gradientes    https://cssgradient.io/
+Carrusel    https://css-tricks.com/css-only-carousel/
+Margenes y Padding  https://blog.hubspot.com/website/css-margin-vs-padding#:~:text=In%20CSS%2C%20a%20margin%20is,the%20space%20inside%20an%20element.
+#FAFCFE #DCE8F4 #B2C8DF #83A1C1 #55799F
+Fondo                   Realce
+Banner
+*/
+
+*{/*margin, padding, boxsizing, align-content*/
+    margin: auto;
+    padding: 0;
+    box-sizing: content-box;
+    align-content: center;
+    font-family: 'Quicksand'
+}
+
+/*Start of body*/
+
+body{/*background*/
+    /*!font-family:'Open Sans', sans-serif;*/
+    background: #FAFCFE
+}
+
+header{/*height, background-image, background-repeat, background-attachment, background-size*/
+    height: 234px;  /*dependiente del tamaño de la imagen*/
+    background-image: url(../img/Banner.jpg);
+    background-repeat:  no-repeat;  /*imágen estática*/
+    background-attachment: fixed;   /*imágen estática*/
+    background-size: contain;
+}
+
+.container{/*width, max-width, margin, padding*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.banner{/*text-align, align-items*/
+    text-align: left;
+    align-items: flex-end;
+
+}
+
+.titulo{/*Título principal*/
+    padding-right: 300px;   /*acomode a la izquierda*/
+    text-align: center;
+    font-size: 55px;
+    text-shadow: 3px 3px 10px #55799F;
+    margin-top: 5px;
+}
+
+.doctor{
+    font-weight: bolder;
+    font-size: 45px;
+    color: #FAFCFE;
+    text-shadow: 1px 1px 2px #55799F;
+    text-decoration-line: overline;
+}
+
+.color1{/*#FAFCFE Color de Banner*/
+    font-weight: bolder;
+    color: #FAFCFE;
+}
+
+.color2{/*#83A1C1 Color de títulos*/
+    color: #83A1C1
+}
+
+.sombra{/* #83A1C1 sombreado leve*/
+    text-shadow: 2px 2px 4px #83A1C1;
+}
+
+.RRSS{/*Botones de redes sociales   text-align,accent*/
+    font-size: 20px;
+    text-align: right;  /*acomode a la derecha*/
+    margin-top: -120px;  /*overlap*/
+    text-shadow: 4px 4px 5px #000000;
+    font-weight: bold;
+}
+
+/*End of Header*/
+/*Start of main*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 400;   /*Aligerar el tamaño*/
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.etapas{
+    text-align: center;
+    font-size: 125%;
+}
+
+.Melanoma{
+    display: flex;
+}
+.contenedor-servicio{
+    display: flex;
+}
+
+.contenedor-servicio img{
+    width: 50%;
+}
+
+.diseño-servicio{
+    width: 45%;
+}
+
+.sevice{
+    margin-bottom: 20px;
+}
+
+.NumeroCirculo{
+    margin-top: 7px;
+    color: #a2e1db;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #a2e1db 0%, #55cbcd 100%);
+    width: 30px;
+    height: 30px;
+    color: #faffff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+
+.gallery{
+    color:#FAFCFE;
+    background: #b2c8DF;
+}
+
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agrega-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0;
+}
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.direccion{
+    font-size: 15px;
+    text-align: center;
+    height:fit-content
+    
+}
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.cont-expert img{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/*footer*/
+
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #764ba2;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #ffffff;
+    margin-bottom: 60px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none
+}
