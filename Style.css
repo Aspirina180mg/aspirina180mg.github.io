@@ -204,7 +204,7 @@ figure{
     background-image: url(../img/Manos.jpg);
     background-repeat:  no-repeat;  /*imágen estática*/
     background-attachment: fixed;   /*imágen estática*/
-    background-size: cover;
+    background-size:auto;
     background-position:center;
     text-align:center;
     box-shadow: inset 0vw 1vw 2vw #000000;
