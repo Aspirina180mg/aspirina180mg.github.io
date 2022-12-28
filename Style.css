@@ -10,12 +10,9 @@ Minimum Font Size   https://accessibleweb.com/question-answer/minimum-font-size/
 #FAFCFE #DCE8F4 #B2C8DF #83A1C1 #55799F
 Fondo                   Realce
 Contraste               Sombra
-Contraste               Sombra
 Banner
 */
 
-/*Inicialización*/
-*{/*margin auto, box-sizing content-box, fuente Quicksand*/
 /*Inicialización*/
 *{/*margin auto, box-sizing content-box, fuente Quicksand*/
     margin: auto;
@@ -53,7 +50,6 @@ header{/*está el fondo del banner*/
     height: 20.2vw;
     background-image: url(../img/Banner.jpg);
     background-repeat: no-repeat;  /*imágen estática*/
-    background-repeat: no-repeat;  /*imágen estática*/
     background-attachment: fixed;   /*imágen estática*/
     background-size: 100vw;
 }
@@ -69,7 +65,6 @@ header{/*está el fondo del banner*/
     height: 100%;
     margin: auto;
 }
-.doctor{/*tamaño 30px #FAFCFE sombra #55799F con overline*/
 .doctor{/*tamaño 30px #FAFCFE sombra #55799F con overline*/
     font-weight: bolder;
     font-size: 2.25vw;
@@ -154,13 +149,11 @@ main{ /*background #FAFCFE */
 }
 
 /*Pacientes previos*/
-/*Pacientes previos*/
 .gallery{
     color:#FAFCFE;
     background: #dce8f4;
     padding-top: 1.5vh;
 }
-.video-container{
 .video-container{
     display: flex;
     justify-content: space-evenly;
@@ -284,7 +277,6 @@ footer{
     max-width: 95%;
     margin: auto;
 }
-.curso{
 .curso{
     text-align: center;
     margin: 1px;
