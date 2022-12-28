@@ -2,6 +2,11 @@
 Sitio Original  https://alvaroleivadermatologo.cl/
 Uso HTML    https://www.w3schools.com/html/default.asp
 Íconos  https://boxicons.com/
+
+React 101   https://reactjs.org/docs/add-react-to-a-website.html
+Usar un componente de React varias veces    https://gist.github.com/gaearon/faa67b76a6c47adbab04f739cba7ceda
+Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3
+
 -->
 
 <!DOCTYPE html>
@@ -10,16 +15,12 @@ Uso HTML    https://www.w3schools.com/html/default.asp
     <!-- Misc. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- título -->
     <title>Álvaro Leiva Dermatólogo</title>
-    
     <!-- CSS -->
     <link rel="stylesheet" href="Style.css">
-    
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
     <!-- fuentes -->
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </head>
@@ -34,17 +35,17 @@ Uso HTML    https://www.w3schools.com/html/default.asp
             <div class="SocialMedia banner">
                 <div>
                     <!-- Whatsapp Rossana-->
-                    <i class='whatsapp bx-fw bx bxl-whatsapp bx-md bx-tada-hover'></i>
+                    <i class='whatsapp bx-fw bx bxl-whatsapp bx-tada-hover'></i>
                     <a href="https://wa.me/+undefined56944964337?text=Saludos%20Rossana,%20quisiera%20hacer%20una%20consulta." title="Hablar a Whatsapp">Secretaria Rossana</a>
                     <br><br>
                     <!-- Whatsapp Ana María-->
-                    <i class='whatsapp bx-fw bx bxl-whatsapp bx-md bx-tada-hover'></i>
+                    <i class='whatsapp bx-fw bx bxl-whatsapp bx-tada-hover'></i>
                     <a href="https://wa.me/+undefined56961938076?text=Saludos%20Ana%20Mar%C3%ADa,%20quisiera%20hacer%20una%20consulta." title="Hablar a Whatsapp">Secretaria Ana María</a>
                     <br><br>
                 </div>
                 <div>
                     <!-- toma de horas -->
-                    <i class='tomaHoras bx-fw bx bx-first-aid bx-md bx-flashing'></i>
+                    <i class='tomaHoras bx-fw bx bx-first-aid bx-flashing'></i>
                     <a href="https://25c55970ef8ffe69276f82cf192ecefafba31bd4.agenda.softwaredentalink.com/agendas/agendamiento" title="Ir a página de toma de horas">Toma de Horas</a>
                 </div>   
             </div>
@@ -53,9 +54,9 @@ Uso HTML    https://www.w3schools.com/html/default.asp
 
     <main>
         <div class="container warning"> <!-- aviso -->
-            <i class='bx bx-error-alt bx-burst bx-md' ></i>
+            <i class='bx bx-error-alt bx-burst icon' ></i>
             <H2>Le recordamos a nuestros pacientes que no tenemos venta de bonos en nuestra consulta</H2>
-            <i class='bx bx-error-alt bx-burst bx-md' ></i>
+            <i class='bx bx-error-alt bx-burst icon' ></i>
         </div>
 
         <div class="container"> <!-- Melanoma -->
@@ -93,133 +94,81 @@ Uso HTML    https://www.w3schools.com/html/default.asp
             </div>
         </div>
 
-        <div class="gallery">   <!-- Pacientes Previos -->
-            <div class="container">
-                <h2 class="subtitle color2 sombra">Video</h2>
-                <!--todo <h2 class="subtitle color2 sombra">Pacientes previos</h2>-->
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VgY3xzF2rJg" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <!--<section class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                            <div class="carousel__snapper">
-                                <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                            </div>
-                        </li>
-                        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                        </li>
-                        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                        </li>
-                        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                        </li>
-                    </ol>
-                    <aside class="carousel__navigation">
-                        <ol class="carousel__navigation-list">
-                            <li class="carousel__navigation-item">
-                                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                            </li>
-                            <li class="carousel__navigation-item">
-                                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                            </li>
-                            <li class="carousel__navigation-item">
-                                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                            </li>
-                            <li class="carousel__navigation-item">
-                                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                            </li>
-                        </ol>
-                    </aside>
-                </section>-->
-
-                <h2 class="subtitle color2 sombra">Tratamientos</h2>    <!-- Tratamientos -->
-                <div class="tratamientos">
-                    <div class="SectionTratamientos"> <!-- Primera Fila -->
-                        <div class="tratamiento">
-                            <i class='bx bx-injection bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
-                            <div>
-                                <p class="titleTratamiento">Dermatología Clínica, niños y adultos</p>
-                                <p class="textTratamiento">Enfermedades inflamatorias (Lupus cutáneo, vasculitis, etc.</p>
-                            </div>
-                        </div>
-                        <div class="tratamiento">
-                            <i class='bx bx-health bx-lg bx-fade-left-hover sombra'></i>   <!-- Centro Izquierda -->
-                            <div>
-                                <p class="titleTratamiento">Cirugía</p>
-                                <p class="textTratamiento">Cirugía Oncológica (cancer de piel).</p>
-                                <p class="textTratamiento">Lesiones benignas (quistes, lipomas, etc.</p>
-                                <p class="textTratamiento">Cirugía Ungueal.</p>
-                            </div>
-                            
-                        </div>
-                        <div class="tratamiento">
-                            <i class='bx bx-heart-circle bx-lg bx-fade-left-hover sombra'></i>  <!-- Centro Derecha -->
-                            <div>
-                                <p class="titleTratamiento">Dermatoscopía digital</p>
-                                <p class="textTratamiento">Seguimientos lunares.</p>
-                            </div>    
-                        </div>
-                        <div class="tratamiento">
-                            <i class='bx bx-donate-blood bx-lg bx-fade-left-hover sombra'></i>  <!-- Derecha -->
-                            <p class="titleTratamiento">Infecciones de transmisión sexual (ITS)</p>
-                        </div>
-                    </div>
-                    <div class="SectionTratamientos"> <!-- Segunda Fila -->
-                        <div class="tratamiento">
-                            <i class='bx bx-dna bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
-                            <p class="titleTratamiento">Alopecias</p>
-                        </div>
-                        <div class="tratamiento">
-                            <i class='bx bx-vial bx-lg bx-fade-left-hover sombra'></i>  <!-- Centro -->
-                            <p class="titleTratamiento">Tricoscopía</p>
-                        </div>
-                        <div class="tratamiento">
-                            <i class='bx bx-plus-medical bx-lg bx-fade-left-hover sombra'></i>   <!-- Derecha -->
-                            <p class="titleTratamiento">Dermatocosmiatría</p>
-                        </div>
-                    </div>
-                    <div class="SectionTratamientos"> <!-- Segunda Fila -->
-                        <div class="tratamiento">
-                            <i class='bx bx-first-aid bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
-                            <p class="titleTratamiento">Alopecia Androgenética, Efluvio telógeno, Alopecia areata</p>
-                        </div>
-                        <div class="tratamiento">
-                            <i class='bx bxs-capsule bx-lg bx-fade-left-hover sombra'></i>  <!-- Derecha -->
-                            <p class="titleTratamiento">Toxina botulínica, Ácido Hialurónico, Sculptra</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="gallery">   <!-- Pacientes Previos y tratamientos -->
+            <h2 class="subtitle color2 sombra">Video</h2>
+            <!--todo <h2 class="subtitle color2 sombra">Pacientes previos</h2>-->
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/VgY3xzF2rJg" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+                
+            <h2 class="subtitle color2 sombra">Tratamientos</h2>    <!-- Tratamientos -->
+            <div class="tratamientos">
+                <div class="SectionTratamientos"> <!-- Primera Fila -->
+                    <div class="tratamiento">
+                        <i class='bx bx-injection bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
+                        <p class="titleTratamiento">Dermatología Clínica, niños y adultos</p>
+                        <p class="textTratamiento">Enfermedades inflamatorias (Lupus cutáneo, vasculitis, etc.</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-health bx-lg bx-fade-left-hover sombra'></i>   <!-- Centro Izquierda -->
+                        <p class="titleTratamiento">Cirugía</p>
+                        <p class="textTratamiento">Cirugía Oncológica (cancer de piel).</p>
+                        <p class="textTratamiento">Lesiones benignas (quistes, lipomas, etc.</p>
+                        <p class="textTratamiento">Cirugía Ungueal.</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-heart-circle bx-lg bx-fade-left-hover sombra'></i>  <!-- Centro Derecha -->
+                        <p class="titleTratamiento">Dermatoscopía digital</p>
+                        <p class="textTratamiento">Seguimientos lunares.</p>
+                        
+                    </div>
+                </div>
+                <div class="SectionTratamientos"> <!-- Primera Fila -->
+                    <div class="tratamiento">
+                        <i class='bx bx-donate-blood bx-lg bx-fade-left-hover sombra'></i>  <!-- Derecha -->
+                        <p class="titleTratamiento">Infecciones de transmisión sexual (ITS)</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-dna bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
+                        <p class="titleTratamiento">Alopecias</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-vial bx-lg bx-fade-left-hover sombra'></i>  <!-- Centro -->
+                        <p class="titleTratamiento">Tricoscopía</p>
+                    </div>
+                </div>
+                <div class="SectionTratamientos"> <!-- Primera Fila -->
+                    <div class="tratamiento">
+                        <i class='bx bx-plus-medical bx-lg bx-fade-left-hover sombra'></i>   <!-- Derecha -->
+                        <p class="titleTratamiento">Dermatocosmiatría</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-first-aid bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
+                        <p class="titleTratamiento">Alopecia Androgenética, Efluvio telógeno, Alopecia areata</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bxs-capsule bx-lg bx-fade-left-hover sombra'></i>  <!-- Derecha -->
+                        <p class="titleTratamiento">Toxina botulínica, Ácido Hialurónico, Sculptra</p>
+                    </div>
+                </div>              
+            </div>
+            
         </div>
-
         <figure>    <!-- Fondo flotante -->
         </figure>
-
-        <div class="container"> <!-- Dirección -->
+        <div class="container correction"> <!-- Dirección -->
             <h2 class="subtitle color1 sombra">Consulta Médica</h2>
             <div class="adress">
                 <div class="textAdress">
                     <p>Centro médico Iquique</p>
-                    <p>ubicado en Arturo Prat #1170, piso 7, oficina 714</p>
+                    <p>Ubicado en Arturo Prat #1170</p>
+                    <p>piso 7, oficina 714</p>
                     <br>
-                    <img class="image" src="img/Centro-Medico-Iquique.jpg" style="width:300px;height:300px;">    <!--Necesario para que se vea bien-->
+                    <img class="image" src="img/Centro-Medico-Iquique.jpg">    <!--Necesario para que se vea bien-->
                 </div>
-                <div class="image">
-                    <iframe  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgYb4Af0TUpERqTCRBn_BlqY&key=AIzaSyB2IGDbodmEQK51cQksWGxtcgE_hxULuCw" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map">
+                    <iframe class="responsive" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgYb4Af0TUpERqTCRBn_BlqY&key=AIzaSyB2IGDbodmEQK51cQksWGxtcgE_hxULuCw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>  
             </div>
         </div>
@@ -227,10 +176,12 @@ Uso HTML    https://www.w3schools.com/html/default.asp
 
     <footer>    <!-- Biografía -->
         <div class="container color2 biography">
-            <h2 class="brand">Dermatólogo</h2>
-            <h2 class="brand">Dr. Álvaro Leiva S.</h2>
-            <p>Médico dermatólogo, titulado en la Universidad de Chile, egresado el año 2008.</p>
-            <p>Actualmente es Médico dermatólogo en Hospital de Iquique y Centro Clínico.</p>
+            <div class="brand">
+                <h2>Dermatólogo Dr. Álvaro Leiva S.</h2>    
+            </div>
+            <div>
+                <p>Médico dermatólogo, titulado en la Universidad de Chile, egresado el año 2008. Actualmente es Médico dermatólogo en Hospital de Iquique y Centro Clínico.</p>
+            </div>
         </div>
         <div>
             <div class="SectionCursos"> <!-- Primera Fila -->
