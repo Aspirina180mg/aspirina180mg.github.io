@@ -48,9 +48,9 @@ a{  /*Estilizado enlaces web*/
 /*Banner*/
 header{/*está el fondo del banner*/
     height: 20.2vw;
-    background-image: url(../img/Banner.jpg);
-    background-repeat: no-repeat;  /*imágen estática*/
-    background-attachment: fixed;   /*imágen estática*/
+    background: url(../img/Banner.jpg) no-repeat fixed;
+    /*background-repeat: no-repeat;  /*imágen estática*/
+    /*background-attachment: fixed;   /*imágen estática*/
     background-size: 100vw;
 }
 .banner{/*#FAFCFE Color de Banner*/
@@ -196,12 +196,11 @@ main{ /*background #FAFCFE */
     word-wrap: break-word;
 }
 
-
 /*Fondo flotante*/
 figure{
     max-height: 33vh;
     height: 33vw;
-    background-image: url(../img/Manos.jpg);
+    background-image: url(../img/Fondo-Flotante.jpg);
     background-repeat:  no-repeat;  /*imágen estática*/
     background-attachment: fixed;   /*imágen estática*/
     background-size:400vh;
@@ -344,14 +343,18 @@ footer{
         width: 90%;
     }
     .Melanoma{
-        font-size: 4vw;
+        font-size: 3.6vw;
         display: unset;
     }
     .GroupMelanoma{
         display: flex;
+        width: 60%;
+        justify-content:center;
     }
     .imgMelanoma{
-        display: none;
+        width: 20vw;
+        height: 20vw;
+        margin: 1vw;
     }
     .number{
         display:none
@@ -362,21 +365,20 @@ footer{
         display: unset;
     }
     .tratamiento{
-        display: unset;
         width: 80vw;
         font-size: 8vw;
     }
     .imgTratamientos{
-        font-size: 0px;
+        font-size: 8vw;
     }
     .titleTratamiento{
-        font-size: 4vw;
-        max-width:80vw;
+        font-size: 5vw;
+        max-width:90vw;
         
     }
     .textTratamiento{
-        font-size: 3vw;
-        max-width: 70vw;
+        font-size: 3.5vw;
+        max-width: 80vw;
     }
     
     /*Dirección*/
@@ -395,9 +397,9 @@ footer{
     }
     .map{
         max-width:80vw and 150vh;
-        width: 50vw;
+        width: 75vw;
         max-height:50vh;
-        height: 50vw;
+        height: 75vw;
         
     }
     
@@ -412,15 +414,21 @@ footer{
     .SectionCursos{
         display:unset;
     }
+    .curso{
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+    }
     .imgCurso{
-        display: none;
+        height: 12vw;
     }
     .titleCurso{
-        max-width: 90vw;
+        max-width: 50vw;
         font-size: 3.5vw;
     }
     .textCurso{
-        max-width: 80vw;
+        max-width: 40vw;
         font-size: 2.5vw;
     }
 }
@@ -469,13 +477,14 @@ footer{
         width: 90%;
     }
     .Melanoma{
-        font-size: 3vw;
+        font-size: 4vw;
         display: unset;
     }
     .GroupMelanoma{
         display: flex;
-        width: 50%;
-        margin-bottom: 1vw;
+        margin: 25vw;
+        margin-top: auto;
+        margin-bottom: 2vw;
     }
     .textMelanoma{
         width:40vw;
@@ -489,6 +498,9 @@ footer{
     }
 
     /*Tratamientos*/
+    .imgTratamientos{
+        display: unset;
+    }
     .tratamiento{
         font-size: 8vw;
     }
