@@ -6,6 +6,7 @@ Carrusel    https://css-tricks.com/css-only-carousel/
 Margenes y Padding  https://blog.hubspot.com/website/css-margin-vs-padding#:~:text=In%20CSS%2C%20a%20margin%20is,the%20space%20inside%20an%20element.
 Colores Whatsapp    https://usbrandcolors.com/whatsapp-colors/
 Internal CSS    https://blog.hubspot.com/website/add-css-to-html#how-to-add-internal-css-to-html
+Minimum Font Size   https://accessibleweb.com/question-answer/minimum-font-size/#:~:text=Answer,usually%20be%2016px%20or%20larger.
 #FAFCFE #DCE8F4 #B2C8DF #83A1C1 #55799F
 Fondo                   Realce
 Contraste               Sombra
@@ -27,7 +28,6 @@ Banner
     margin-bottom: 2vh;
     margin-top: 2vh;
     font-size: 3vw;
-    
 }
 
 /*Estilizado*/
@@ -73,7 +73,7 @@ header{/*está el fondo del banner*/
     text-decoration-line: overline;
 }
 .SocialMedia{/*Botones de redes sociales, size 20px, weight bold, shadow 4px 4px 5px #000000*/
-    font-size: 1.5vw;
+    font-size: 1.45vw;
     font-weight: bold;
     text-align: right;  /*acomode a la derecha*/
     margin-top: -10vw;  /*overlap*/
@@ -112,6 +112,7 @@ main{ /*background #FAFCFE */
 .stage{/*text-align center, font-size 125%*/
     text-align: center;
     font-size: 1.5vw;
+    width: 90%;
 }
 .Melanoma{
     display: flex;
@@ -120,6 +121,9 @@ main{ /*background #FAFCFE */
     margin-top: 1vw;
     margin-bottom:1vw;
     font-size: 1.4vw;
+}
+.GroupMelanoma{
+    text-align: center;
 }
 .imgMelanoma{
     border: 1vw double #B2C8DF;
@@ -171,29 +175,27 @@ main{ /*background #FAFCFE */
     text-align: center;
     display:flex;
     max-width: 95%;
-    margin: 50px;
-    
+    margin: 2vw;
     justify-content:space-around;
 }
 .tratamiento{
+    font-size: 4vw;
     text-align: center;
     margin: 1px;
-}
-.imgTratamiento{
-    -webkit-filter: drop-shadow(2px 2px 2px #55799F);   /* Sombra para png */
-    filter: drop-shadow(2px 2px 2px #55799F);           /* Sombra para png */
+    width: 25vw;
 }
 .titleTratamiento{
-    font-size: 125%;
+    font-size: 1.4vw;
     font-weight: bolder;
-    max-width:200px;
+    max-width:25vw;
     word-wrap: break-word;
 }
 .textTratamiento{
-    font-size: 87.5%;
-    max-width:200px;
+    font-size: 1.2vw;
+    max-width: 20vw;
     word-wrap: break-word;
 }
+
 
 /*Fondo flotante*/
 figure{
@@ -216,6 +218,13 @@ figure{
     padding-right: 10vw;
     background: #FAFCFE;
     justify-content: center;
+}
+.sTextAdress{
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    height:fit-content;
+    color: #55799F;
 }
 .textAdress{
     font-size: 2vw;
@@ -256,6 +265,7 @@ footer{
     color: #83A1C1;
     font-size: 1.17vw;
     text-align:center;
+    width: 95%
 }
 .brand{
     font-weight: 500;
@@ -265,7 +275,6 @@ footer{
 .SectionCursos{
     display:flex;
     max-width: 95%;
-    margin: 50px;
     margin: auto;
 }
 .curso{
@@ -273,9 +282,9 @@ footer{
     margin: 1px;
 }
 .imgCurso{
-    height:5vw;
-    -webkit-filter: drop-shadow(0.2vw 0.2vw 0.2vw #55799F);
-    filter: drop-shadow(0.2vw 0.2vw 0.2vw #55799F);
+    height: 5vw;
+    -webkit-filter: drop-shadow(0.2vw 0.2vw 0.2vw #55799F); /* Sombra para PNG*/
+    filter: drop-shadow(0.2vw 0.2vw 0.2vw #55799F);         /* Sombra para PNG*/
     margin: 1vw;
 }
 .titleCurso{
@@ -292,36 +301,338 @@ footer{
 }
 
 /* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 599px) {
-    .s {display: none;}
-    .m {display: none;}
-    .l {display: none;}
-    .xl {display: none;}
+    .s{
+        display:none;
+    }
+    .subtitle{/*font-size 250%*/
+        font-size: 8vw;
+    }
+    
+    /* Banner */
+    header{/*está el fondo del banner*/
+        height: 35vw;
+        background-size: 173vw;
+    }
+    .title{/*size 60px, shadow #55799F */
+        padding-right: 0vw;   /*acomode a la izquierda*/
+        font-size: 6.5vw;
+    }
+    .doctor{/*tamaño 30px #FAFCFE sombra #55799F con overline*/
+        font-size: 5vw;
+    }
+    .SocialMedia{/*Botones de redes sociales, size 20px, weight bold, shadow 4px 4px 5px #000000*/
+        margin: 1vw;
+        text-align: center;
+    }
+    .SocialMedia{
+        display: flex;
+        font-size: 3.5vw;
+    }
+
+    /*Aviso*/
+    .warning{/*color #FAFCFE, gradient #B2C8DF, #83A1C1, #55799F, Font size 18px*/
+        font-size: 2.9vw;
+        text-align: center;
+    }
+    .icon{
+        font-size: 0vw;
+    }
+    
+    /*Melanoma*/
+    .stage{
+        font-size: 3.14vw;
+        width: 90%;
+    }
+    .Melanoma{
+        font-size: 4vw;
+        display: unset;
+    }
+    .GroupMelanoma{
+        display: flex;
+    }
+    .imgMelanoma{
+        display: none;
+    }
+    .number{
+        display:none
+    }
+
+    /*Tratamientos*/
+    .SectionTratamientos{
+        display: unset;
+    }
+    .tratamiento{
+        display: unset;
+        width: 80vw;
+        font-size: 8vw;
+    }
+    .imgTratamientos{
+        font-size: 0px;
+    }
+    .titleTratamiento{
+        font-size: 4vw;
+        max-width:80vw;
+        
+    }
+    .textTratamiento{
+        font-size: 3vw;
+        max-width: 70vw;
+    }
+    
+    /*Dirección*/
+    .adress{
+        display:unset;
+        padding: 5vw;
+    }
+    .sTextAdress{
+        font-size: 4vw;
+    }
+    .textAdress{
+        display: none;
+    }
+    .image{
+        display:none;
+    }
+    .map{
+        max-width:80vw and 150vh;
+        width: 50vw;
+        max-height:50vh;
+        height: 50vw;
+        
+    }
+    
+    /*Biografía*/
+    .biography{
+        font-size: 3vw;
+    }
+    .brand{
+        /* Agregado */
+        font-size: 3.8vw;
+    }
+    .SectionCursos{
+        display:unset;
+    }
+    .imgCurso{
+        display: none;
+    }
+    .titleCurso{
+        max-width: 90vw;
+        font-size: 3.5vw;
+    }
+    .textCurso{
+        max-width: 80vw;
+        font-size: 2.5vw;
+    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) and (max-width: 765px)  {
-    .xs {display: none;}
-    .m {display: none;}
-    .l {display: none;}
-    .xl {display: none;}
+/*? Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) and (max-width: 767px)  {
+    /*Inicialización*/
+    .s{
+        display:none;
+    }
+    .subtitle{/*font-size 250%*/
+        font-size: 6vw;
+    }
+
+    /* Banner */
+    header{/*está el fondo del banner*/
+        height: 33vw;
+        background-size: 166vw;
+    }
+    .title{/*size 60px, shadow #55799F */
+        padding-right: 0vw;
+        font-size: 6vw;
+    }
+    .doctor{/*tamaño 30px #FAFCFE sombra #55799F con overline*/
+        font-size: 3vw;
+    }
+    .SocialMedia{/*Botones de redes sociales, size 20px, weight bold, shadow 4px 4px 5px #000000*/
+        margin: 1vw;
+        margin-right: 2.5vw;
+    }
+    .SocialMedia{
+        font-size: 2.8vw;
+    }
+
+    /*Aviso*/
+    .warning{/*color #FAFCFE, gradient #B2C8DF, #83A1C1, #55799F, Font size 18px*/
+        font-size: 2vw;
+        text-align: center;
+    }
+    .icon{
+        font-size: 6vw;
+    }
+    
+    /*Melanoma*/
+    .stage{
+        font-size: 3vw;
+        width: 90%;
+    }
+    .Melanoma{
+        font-size: 3vw;
+        display: unset;
+    }
+    .GroupMelanoma{
+        display: flex;
+        width: 50%;
+        margin-bottom: 1vw;
+    }
+    .textMelanoma{
+        width:40vw;
+    }
+    .imgMelanoma{
+        width: 14vw;
+        height: 14vw;
+    }
+    .number{
+        display:none;
+    }
+
+    /*Tratamientos*/
+    .tratamiento{
+        font-size: 8vw;
+    }
+    .titleTratamiento{
+        font-size: 3vw;
+    }
+    .textTratamiento{
+        font-size: 2vw;
+    }
+    
+    /*Dirección*/
+    .adress{
+        display:unset;
+        padding: 5vw;
+    }
+    .sTextAdress{
+        font-size: 2vw;
+        font-weight: bold;
+        text-align: center;
+        height:fit-content;
+        color: #55799F;
+        /* Agregado */
+        font-size: 2.5vw;
+    }
+    .textAdress{
+        display: none;
+    }
+    .image{
+        display:none;
+    }
+    .map{
+        max-width:80vw and 150vh;
+        width: 100vw;
+        max-height:50vh;
+        height: 50vw;
+        
+    }
+    
+    /*Biografía*/
+    .biography{
+        font-size: 3vw;
+    }
+    .brand{
+        /* Agregado */
+        font-size: 3.8vw;
+    }
+    .SectionCursos{
+        display:unset;
+    }
+    .curso{
+        display: flex;
+        width: 80vw;
+        text-align: center;
+        margin: auto;
+        padding: 1vw;
+    }
+    .imgCurso{
+        height: 10vw;
+    }
+    .titleCurso{
+        max-width: 70vw;
+        font-size: 3vw;
+    }
+    .textCurso{
+        max-width: 50vw;
+        font-size: 2.2vw;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) and (max-width: 991px){
-    .xs {display: none;}
-    .s {display: none;}
-    .l {display: none;}
-    .xl {display: none;}
+/*? Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) and (max-width: 991px){
+    
+    /*Inicialización*/
+    .subtitle{/*font-size 250%*/
+        font-size: 4vw;
+    }
+
+    /* Banner */
+    .SocialMedia{
+        font-size: calc(2vw);
+    }
+
+    /*Melanoma*/
+    .stage{
+        font-size: 2vw;
+    }
+    .Melanoma{
+        font-size: 1.8vw;
+    }
+    .imgMelanoma{
+        width: 13vw;
+        height: 13vw;
+    }
+    .number{
+        display:none;
+    }
+
+    /*Tratamientos*/
+    .tratamiento{
+        font-size: 5vw;
+    }
+    .titleTratamiento{
+        font-size: 2vw;
+    }
+    .textTratamiento{
+        font-size: 1.8vw;
+    }
+    
+    /*Dirección*/
+    .sTextAdress{
+        display: none;
+    }
+    .textAdress{
+        font-size: 2.5vw;
+    }
+    .map{
+        width: 42vw;
+        height: 42vw;
+    }
+    
+    /* Biografía */
+    .biography{
+        font-size: 2.1vw;
+    }
+    .brand{
+        font-size: 3vw;
+    }
+    .titleCurso{
+        font-size: 1.8vw;
+    }
+    .textCurso{
+        font-size: 1.5vw;
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) and (max-width: 1199px){
-    .xs {display: none;}
-    .s {display: none;}
-    .m {display: none;}
-    .xl {display: none;}
+/*? Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /*! Nada que hacer aquí */
+    .sTextAdress{
+        display: none;
+    }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */@media (min-width: 1200px) {
-    .xs {display: none;}
-    .s {display: none;}
-    .m {display: none;}
-    .l {display: none;}
+/*? Extra large devices (large laptops and desktops, 1200px and up) */@media (min-width: 1200px) {
+    /*! Nada que hacer aquí */
+    .sTextAdress{
+        display: none;
+    }
 }

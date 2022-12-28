@@ -27,7 +27,7 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
 
 <body>
     <header>    <!-- Banner -->
-        <div class="container">
+        <div class="container bannerContainer">
             <div>   <!-- Título -->
                 <h1 class="title banner">El cuidado de tu piel<br>en las manos de un especialista</h1>
                 <h2 class="title banner doctor">Dermatólogo Dr Álvaro Leiva S.</h2>
@@ -37,11 +37,11 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
                     <!-- Whatsapp Rossana-->
                     <i class='whatsapp bx-fw bx bxl-whatsapp bx-tada-hover'></i>
                     <a href="https://wa.me/+undefined56944964337?text=Saludos%20Rossana,%20quisiera%20hacer%20una%20consulta." title="Hablar a Whatsapp">Secretaria Rossana</a>
-                    <br><br>
+                    <br><br class="s">
                     <!-- Whatsapp Ana María-->
                     <i class='whatsapp bx-fw bx bxl-whatsapp bx-tada-hover'></i>
                     <a href="https://wa.me/+undefined56961938076?text=Saludos%20Ana%20Mar%C3%ADa,%20quisiera%20hacer%20una%20consulta." title="Hablar a Whatsapp">Secretaria Ana María</a>
-                    <br><br>
+                    <br><br class="s">
                 </div>
                 <div>
                     <!-- toma de horas -->
@@ -66,30 +66,40 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
                 <br>
             </div>
             <div class="Melanoma">
-                <div>
+                <div class="GroupMelanoma">
                     <img class="imgMelanoma" src="img/Melanoma/Melanoma A.jpg">
-                    <h3 class="NumberCircle"> <span class="number">A</span>Asimétrico</h3>
-                    <p>mitades diferentes.</p>
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">A</span>Asimétrico</h3>
+                        <p class="textMelanoma">mitades diferentes.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="GroupMelanoma">
                     <img class="imgMelanoma" src="img/Melanoma/Melanoma B.jpg">
-                    <h3 class="NumberCircle"> <span class="number">B</span>Borde</h3>
-                    <p>Irregular o difuso.</p>
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">B</span>Borde</h3>
+                        <p class="textMelanoma">Irregular o difuso.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="GroupMelanoma">
                     <img class="imgMelanoma" src="img/Melanoma/Melanoma C.jpg">
-                    <h3 class="NumberCircle"> <span class="number">C</span>Color</h3>
-                    <p>Más de uno.</p>
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">C</span>Color</h3>
+                        <p class="textMelanoma">Más de uno.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="GroupMelanoma">
                     <img class="imgMelanoma" src="img/Melanoma/Melanoma D.jpg">
-                    <h3 class="NumberCircle"> <span class="number">D</span>Diámetro</h3>
-                    <p>Más de 6mm.</p>
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">D</span>Diámetro</h3>
+                        <p class="textMelanoma">Más de 6mm.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="GroupMelanoma">
                     <img class="imgMelanoma" src="img/Melanoma/Melanoma E.jpg">
-                    <h3 class="NumberCircle"> <span class="number">E</span>Evolución</h3>
-                    <p>Cambios en el tiempo.</p>
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">E</span>Evolución</h3>
+                        <p class="textMelanoma">Cambios en el tiempo.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,19 +116,19 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
             <div class="tratamientos">
                 <div class="SectionTratamientos"> <!-- Primera Fila -->
                     <div class="tratamiento">
-                        <i class='bx bx-injection bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
+                        <i class='bx bx-injection bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Izquierda -->
                         <p class="titleTratamiento">Dermatología Clínica, niños y adultos</p>
                         <p class="textTratamiento">Enfermedades inflamatorias (Lupus cutáneo, vasculitis, etc.</p>
                     </div>
                     <div class="tratamiento">
-                        <i class='bx bx-health bx-lg bx-fade-left-hover sombra'></i>   <!-- Centro Izquierda -->
+                        <i class='bx bx-health bx-fade-left-hover sombra imgTratamientos'></i>   <!-- Centro Izquierda -->
                         <p class="titleTratamiento">Cirugía</p>
                         <p class="textTratamiento">Cirugía Oncológica (cancer de piel).</p>
                         <p class="textTratamiento">Lesiones benignas (quistes, lipomas, etc.</p>
                         <p class="textTratamiento">Cirugía Ungueal.</p>
                     </div>
                     <div class="tratamiento">
-                        <i class='bx bx-heart-circle bx-lg bx-fade-left-hover sombra'></i>  <!-- Centro Derecha -->
+                        <i class='bx bx-heart-circle bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Centro Derecha -->
                         <p class="titleTratamiento">Dermatoscopía digital</p>
                         <p class="textTratamiento">Seguimientos lunares.</p>
                         
@@ -126,29 +136,29 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
                 </div>
                 <div class="SectionTratamientos"> <!-- Primera Fila -->
                     <div class="tratamiento">
-                        <i class='bx bx-donate-blood bx-lg bx-fade-left-hover sombra'></i>  <!-- Derecha -->
+                        <i class='bx bx-donate-blood bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Derecha -->
                         <p class="titleTratamiento">Infecciones de transmisión sexual (ITS)</p>
                     </div>
                     <div class="tratamiento">
-                        <i class='bx bx-dna bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
+                        <i class='bx bx-dna bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Izquierda -->
                         <p class="titleTratamiento">Alopecias</p>
                     </div>
                     <div class="tratamiento">
-                        <i class='bx bx-vial bx-lg bx-fade-left-hover sombra'></i>  <!-- Centro -->
+                        <i class='bx bx-vial bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Centro -->
                         <p class="titleTratamiento">Tricoscopía</p>
                     </div>
                 </div>
                 <div class="SectionTratamientos"> <!-- Primera Fila -->
                     <div class="tratamiento">
-                        <i class='bx bx-plus-medical bx-lg bx-fade-left-hover sombra'></i>   <!-- Derecha -->
+                        <i class='bx bx-plus-medical bx-fade-left-hover sombra imgTratamientos'></i>   <!-- Derecha -->
                         <p class="titleTratamiento">Dermatocosmiatría</p>
                     </div>
                     <div class="tratamiento">
-                        <i class='bx bx-first-aid bx-lg bx-fade-left-hover sombra'></i>  <!-- Izquierda -->
+                        <i class='bx bx-first-aid bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Izquierda -->
                         <p class="titleTratamiento">Alopecia Androgenética, Efluvio telógeno, Alopecia areata</p>
                     </div>
                     <div class="tratamiento">
-                        <i class='bx bxs-capsule bx-lg bx-fade-left-hover sombra'></i>  <!-- Derecha -->
+                        <i class='bx bxs-capsule bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Derecha -->
                         <p class="titleTratamiento">Toxina botulínica, Ácido Hialurónico, Sculptra</p>
                     </div>
                 </div>              
@@ -160,6 +170,11 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
         <div class="container correction"> <!-- Dirección -->
             <h2 class="subtitle color1 sombra">Consulta Médica</h2>
             <div class="adress">
+                <div class="sTextAdress">
+                    <p>Centro médico Iquique</p>
+                    <p>Arturo Prat #1170, piso 7, oficina 714</p>
+                    <br>
+                </div>
                 <div class="textAdress">
                     <p>Centro médico Iquique</p>
                     <p>Ubicado en Arturo Prat #1170</p>
@@ -187,55 +202,75 @@ Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be40
             <div class="SectionCursos"> <!-- Primera Fila -->
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-CILAD.png">  <!-- Izquierda -->
-                    <p class="titleCurso">Diplomado en Dermatología Oncológica</p>
-                    <p class="textCurso">2022 Colegio Ibero-américano de Dermatología.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado en Dermatología Oncológica</p>
+                        <p class="textCurso">2022 Colegio Ibero-américano de Dermatología.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">   <!-- Centro Izquierda -->
-                    <p class="titleCurso">Diplomado en actualización de enfermedades endocrinas del adulto</p>
-                    <p class="textCurso">2021 Pontificia universidad católica de Chile - Actualziación en patología tiróidea, enfermedades óseas y del metabolismo mineral calcio-fósforo, patólogia hipotálamo-hipofisiaria y del eje suprarrenal, andrología y endocrinología ginecológica.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado en actualización de enfermedades endocrinas del adulto</p>
+                        <p class="textCurso">2021 Pontificia universidad católica de Chile - Actualziación en patología tiróidea, enfermedades óseas y del metabolismo mineral calcio-fósforo, patólogia hipotálamo-hipofisiaria y del eje suprarrenal, andrología y endocrinología ginecológica.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-CILAD.png">  <!-- Centro -->
-                    <p class="titleCurso">Diplomado en Tricología</p>
-                    <p class="textCurso">2021 Colegio Ibero-américano de Dermatología.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado en Tricología</p>
+                        <p class="textCurso">2021 Colegio Ibero-américano de Dermatología.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">  <!-- Centro Derecha -->
-                    <p class="titleCurso">Diplomado Reumatología</p>
-                    <p class="textCurso">2016 Pontificia universidad católica de Chile - Diplomado actualizaciones en reumatología, Lupus, eritematoso sistémico, artritis reumatoide, artrosis y artritis idiopática juvenil.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado Reumatología</p>
+                        <p class="textCurso">2016 Pontificia universidad católica de Chile - Diplomado actualizaciones en reumatología, Lupus, eritematoso sistémico, artritis reumatoide, artrosis y artritis idiopática juvenil.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Fundacion-ABC.png">   <!-- Derecha    -->
-                    <p class="titleCurso">Brasil - Fundación ABC Santo André, Sao Paulo</p>
-                    <p class="textCurso">Octubre - Diciembre 2015 (2 meses y medio) Pasantía - Cirugía dermato-oncológica, Cáncer de piel.</p>
+                    <div>
+                        <p class="titleCurso">Brasil - Fundación ABC Santo André, Sao Paulo</p>
+                        <p class="textCurso">Octubre - Diciembre 2015 (2 meses y medio) Pasantía - Cirugía dermato-oncológica, Cáncer de piel.</p>
+                    </div>
                 </div>
             </div>
             <div class="SectionCursos"> <!-- Segunda Fila -->
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-CESCH.png">  <!-- Izquierda -->
-                    <p class="titleCurso">Diplomado Sexualudad</p>
-                    <p class="textCurso">2015 Diplomado Sexualidad Centro de la sexualidad de Chile CESCH.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado Sexualudad</p>
+                        <p class="textCurso">2015 Diplomado Sexualidad Centro de la sexualidad de Chile CESCH.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">  <!-- Centro Izquierda -->
-                    <p class="titleCurso">Diplomado Farmacología</p>
-                    <p class="textCurso">2014 Pontificia universidad católica de Chile - Diplomado Farmacología Clínica.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado Farmacología</p>
+                        <p class="textCurso">2014 Pontificia universidad católica de Chile - Diplomado Farmacología Clínica.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">  <!-- Centro -->
-                    <p class="titleCurso">Diplomado Toxicología</p>
-                    <p class="textCurso">2013 Pontificia universidad católica de Chile - Diplomado Toxicología: mención clínica.</p>
+                    <div>
+                        <p class="titleCurso">Diplomado Toxicología</p>
+                        <p class="textCurso">2013 Pontificia universidad católica de Chile - Diplomado Toxicología: mención clínica.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Salud-Madrid.png">  <!-- Centro Derecha -->
-                    <p class="titleCurso">España - Hospital Puerta de hierro, Madrid</p>
-                    <p class="textCurso">Enero - Marzo 2011 (3 meses) Pasantía - Dermatitis de contacto, Psoriasis y dermatoscopía digital.</p>
+                    <div>
+                        <p class="titleCurso">España - Hospital Puerta de hierro, Madrid</p>
+                        <p class="textCurso">Enero - Marzo 2011 (3 meses) Pasantía - Dermatitis de contacto, Psoriasis y dermatoscopía digital.</p>
+                    </div>
                 </div>
                 <div class="curso">
                     <img class="imgCurso" src="img/Cursos/Logo-Sociedad-medica-santiago.png">  <!-- Derecha -->
-                    <p class="titleCurso">Curso Actializacuón en medicina interna</p>
-                    <p class="textCurso">2011-2012 Sociedad médica de Santiago (Cardiología, Gastroenterología, Inmunología y Reumatología).</p>
+                    <div>
+                        <p class="titleCurso">Curso Actializacuón en medicina interna</p>
+                        <p class="textCurso">2011-2012 Sociedad médica de Santiago (Cardiología, Gastroenterología, Inmunología y Reumatología).</p>
+                    </div>
                 </div>
             </div>
         </div>
