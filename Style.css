@@ -49,8 +49,6 @@ a{  /*Estilizado enlaces web*/
 header{/*está el fondo del banner*/
     height: 20.2vw;
     background: url(../img/Banner.jpg) no-repeat fixed;
-    /*background-repeat: no-repeat;  /*imágen estática*/
-    /*background-attachment: fixed;   /*imágen estática*/
     background-size: 100vw;
 }
 .banner{/*#FAFCFE Color de Banner*/
@@ -79,6 +77,10 @@ header{/*está el fondo del banner*/
     margin-top: -10vw;  /*overlap*/
     margin-right: 4vw;
     text-shadow: 0.4vw 0.4vw 0.5vw #000000;
+}
+.telefono{ /* #FAFCFE sombra #B2C8DF */
+    color: #FAFCFE;
+    text-shadow: 0.2vw 0.2vw 0.4vw #777777;
 }
 .whatsapp{ /* #25D366 sombra #B2C8DF */
     color: #25D366;
@@ -314,20 +316,18 @@ footer{
     }
     .title{/*size 60px, shadow #55799F */
         padding-right: 0vw;   /*acomode a la izquierda*/
-        font-size: 6.5vw;
+        font-size: 5.5vw;
     }
     .doctor{/*tamaño 30px #FAFCFE sombra #55799F con overline*/
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .SocialMedia{/*Botones de redes sociales, size 20px, weight bold, shadow 4px 4px 5px #000000*/
         margin: 1vw;
         text-align: center;
-    }
-    .SocialMedia{
         display: flex;
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
-
+    
     /*Aviso*/
     .warning{/*color #FAFCFE, gradient #B2C8DF, #83A1C1, #55799F, Font size 18px*/
         font-size: 2.9vw;
@@ -433,7 +433,7 @@ footer{
     }
 }
 
-/*? Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) and (max-width: 767px)  {
+/* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) and (max-width: 767px)  {
     /*Inicialización*/
     .s{
         display:none;
@@ -444,8 +444,8 @@ footer{
 
     /* Banner */
     header{/*está el fondo del banner*/
-        height: 33vw;
-        background-size: 166vw;
+        height: 36vw;
+        background-size: 177vw;
     }
     .title{/*size 60px, shadow #55799F */
         padding-right: 0vw;
@@ -457,11 +457,9 @@ footer{
     .SocialMedia{/*Botones de redes sociales, size 20px, weight bold, shadow 4px 4px 5px #000000*/
         margin: 1vw;
         margin-right: 2.5vw;
-    }
-    .SocialMedia{
         font-size: 2.8vw;
     }
-
+    
     /*Aviso*/
     .warning{/*color #FAFCFE, gradient #B2C8DF, #83A1C1, #55799F, Font size 18px*/
         font-size: 2vw;
@@ -570,13 +568,17 @@ footer{
     }
 }
 
-/*? Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) and (max-width: 991px){
+/* Medium devices (landscape tablets, 768px and up) */@media only screen and (min-width: 768px) and (max-width: 991px){
     
     /*Inicialización*/
     .subtitle{/*font-size 250%*/
         font-size: 4vw;
     }
 
+    header{/*está el fondo del banner*/
+        height: 25vw;
+        background-size: 125vw;
+    }
     /* Banner */
     .SocialMedia{
         font-size: calc(2vw);
@@ -635,15 +637,13 @@ footer{
     }
 }
 
-/*? Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) and (max-width: 1199px){
-    /*! Nada que hacer aquí */
+/* Large devices (laptops/desktops, 992px and up) */@media only screen and (min-width: 992px) and (max-width: 1199px){
     .sTextAdress{
         display: none;
     }
 }
 
-/*? Extra large devices (large laptops and desktops, 1200px and up) */@media (min-width: 1200px) {
-    /*! Nada que hacer aquí */
+/* Extra large devices (large laptops and desktops, 1200px and up) */@media (min-width: 1200px) {
     .sTextAdress{
         display: none;
     }
