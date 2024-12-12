@@ -1,0 +1,279 @@
+<!--
+Sitio Original  https://alvaroleivadermatologo.cl/
+Uso HTML    https://www.w3schools.com/html/default.asp
+Íconos  https://boxicons.com/
+
+React 101   https://reactjs.org/docs/add-react-to-a-website.html
+Usar un componente de React varias veces    https://gist.github.com/gaearon/faa67b76a6c47adbab04f739cba7ceda
+Minificación de React   https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Misc. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- título -->
+    <title>Álvaro Leiva Dermatólogo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fuentes -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+
+<body>
+    <header>    <!-- Banner -->
+        <div class="container bannerContainer">
+            <div>   <!-- Título -->
+                <h1 class="title banner">El cuidado de tu piel<br>en las manos de un especialista</h1>
+                <h2 class="title banner doctor">Dermatólogo Dr Álvaro Leiva S.</h2>
+            </div>
+            <div class="SocialMedia banner">
+                <div>
+                    <!-- Whatsapp Rossana-->
+                    <i class='whatsapp bx-fw bx bxl-whatsapp bx-tada-hover'></i>
+                    <a href="https://wa.me/+undefined56944964337?text=Saludos%20Rossana,%20quisiera%20hacer%20una%20consulta." title="Hablar a Whatsapp">Secretaria Rossana</a>
+                    <br><br class="s">
+                    <!-- Whatsapp Ana María-->
+                    <i class='whatsapp bx-fw bx bxl-whatsapp bx-tada-hover'></i>
+                    <a href="https://wa.me/+undefined56961938076?text=Saludos%20Ana%20Mar%C3%ADa,%20quisiera%20hacer%20una%20consulta." title="Hablar a Whatsapp">Secretaria Ana María</a>
+                    <br><br class="s">
+                </div>
+                <div>
+                    <!-- toma de horas -->
+                    <i class='tomaHoras bx-fw bx bx-first-aid bx-flashing'></i>
+                    <a href="https://25c55970ef8ffe69276f82cf192ecefafba31bd4.agenda.softwaredentalink.com/agendas/agendamiento" title="Ir a página de toma de horas">Toma de Horas</a>
+                </div>   
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container warning"> <!-- aviso -->
+            <i class='bx bx-error-alt bx-burst icon' ></i>
+            <H2>Le recordamos a nuestros pacientes que no tenemos venta de bonos en nuestra consulta</H2>
+            <i class='bx bx-error-alt bx-burst icon' ></i>
+        </div>
+
+        <div class="container"> <!-- Melanoma -->
+            <h2 class="subtitle color1 sombra">El ABCD del melanoma</h2>
+            <div>
+                <p class="stage">Las primeras etapas de un melanoma son casi <b>100% curables</b>, habla con el doctor si tienes <b>uno o más</b> de estos signos.</p>
+                <br>
+            </div>
+            <div class="Melanoma">
+                <div class="GroupMelanoma">
+                    <img class="imgMelanoma" src="img/Melanoma/Melanoma A.jpg">
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">A</span>Asimétrico</h3>
+                        <p class="textMelanoma">mitades diferentes.</p>
+                    </div>
+                </div>
+                <div class="GroupMelanoma">
+                    <img class="imgMelanoma" src="img/Melanoma/Melanoma B.jpg">
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">B</span>Borde</h3>
+                        <p class="textMelanoma">Irregular o difuso.</p>
+                    </div>
+                </div>
+                <div class="GroupMelanoma">
+                    <img class="imgMelanoma" src="img/Melanoma/Melanoma C.jpg">
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">C</span>Color</h3>
+                        <p class="textMelanoma">Más de uno.</p>
+                    </div>
+                </div>
+                <div class="GroupMelanoma">
+                    <img class="imgMelanoma" src="img/Melanoma/Melanoma D.jpg">
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">D</span>Diámetro</h3>
+                        <p class="textMelanoma">Más de 6mm.</p>
+                    </div>
+                </div>
+                <div class="GroupMelanoma">
+                    <img class="imgMelanoma" src="img/Melanoma/Melanoma E.jpg">
+                    <div>
+                        <h3 class="NumberCircle"> <span class="number">E</span>Evolución</h3>
+                        <p class="textMelanoma">Cambios en el tiempo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">   <!-- Pacientes Previos y tratamientos -->
+            <h2 class="subtitle color2 sombra">Video</h2>
+            <!--todo <h2 class="subtitle color2 sombra">Pacientes previos</h2>-->
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/VgY3xzF2rJg" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+                
+            <h2 class="subtitle color2 sombra">Tratamientos</h2>    <!-- Tratamientos -->
+            <div class="tratamientos">
+                <div class="SectionTratamientos"> <!-- Primera Fila -->
+                    <div class="tratamiento">
+                        <i class='bx bx-injection bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Izquierda -->
+                        <p class="titleTratamiento">Dermatología Clínica, niños y adultos</p>
+                        <p class="textTratamiento">Enfermedades inflamatorias (Lupus cutáneo, vasculitis, etc.</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-health bx-fade-left-hover sombra imgTratamientos'></i>   <!-- Centro Izquierda -->
+                        <p class="titleTratamiento">Cirugía</p>
+                        <p class="textTratamiento">Cirugía Oncológica (cancer de piel).</p>
+                        <p class="textTratamiento">Lesiones benignas (quistes, lipomas, etc.</p>
+                        <p class="textTratamiento">Cirugía Ungueal.</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-heart-circle bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Centro Derecha -->
+                        <p class="titleTratamiento">Dermatoscopía digital</p>
+                        <p class="textTratamiento">Seguimientos lunares.</p>
+                        
+                    </div>
+                </div>
+                <div class="SectionTratamientos"> <!-- Primera Fila -->
+                    <div class="tratamiento">
+                        <i class='bx bx-donate-blood bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Derecha -->
+                        <p class="titleTratamiento">Infecciones de transmisión sexual (ITS)</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-dna bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Izquierda -->
+                        <p class="titleTratamiento">Alopecias</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-vial bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Centro -->
+                        <p class="titleTratamiento">Tricoscopía</p>
+                    </div>
+                </div>
+                <div class="SectionTratamientos"> <!-- Primera Fila -->
+                    <div class="tratamiento">
+                        <i class='bx bx-plus-medical bx-fade-left-hover sombra imgTratamientos'></i>   <!-- Derecha -->
+                        <p class="titleTratamiento">Dermatocosmiatría</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bx-first-aid bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Izquierda -->
+                        <p class="titleTratamiento">Alopecia Androgenética, Efluvio telógeno, Alopecia areata</p>
+                    </div>
+                    <div class="tratamiento">
+                        <i class='bx bxs-capsule bx-fade-left-hover sombra imgTratamientos'></i>  <!-- Derecha -->
+                        <p class="titleTratamiento">Toxina botulínica, Ácido Hialurónico, Sculptra</p>
+                    </div>
+                </div>              
+            </div>
+            
+        </div>
+        <figure>    <!-- Fondo flotante -->
+        </figure>
+        <div class="container correction"> <!-- Dirección -->
+            <h2 class="subtitle color1 sombra">Consulta Médica</h2>
+            <div class="adress">
+                <div class="sTextAdress">
+                    <p>Centro médico Iquique</p>
+                    <p>Arturo Prat #1170, piso 7, oficina 714</p>
+                    <br>
+                </div>
+                <div class="textAdress">
+                    <p>Centro médico Iquique</p>
+                    <p>Ubicado en Arturo Prat #1170</p>
+                    <p>piso 7, oficina 714</p>
+                    <br>
+                    <img class="image" src="img/Centro-Medico-Iquique.jpg">    <!--Necesario para que se vea bien-->
+                </div>
+                <div class="map">
+                    <iframe class="responsive" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgYb4Af0TUpERqTCRBn_BlqY&key=AIzaSyB2IGDbodmEQK51cQksWGxtcgE_hxULuCw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>  
+            </div>
+        </div>
+    </main>
+
+    <footer>    <!-- Biografía -->
+        <div class="container color2 biography">
+            <div class="brand">
+                <h2>Dermatólogo Dr. Álvaro Leiva S.</h2>    
+            </div>
+            <div>
+                <p>Médico dermatólogo, titulado en la Universidad de Chile, egresado el año 2008. Actualmente es Médico dermatólogo en Hospital de Iquique y Centro Clínico.</p>
+            </div>
+        </div>
+        <div>
+            <div class="SectionCursos"> <!-- Primera Fila -->
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-CILAD.png">  <!-- Izquierda -->
+                    <div>
+                        <p class="titleCurso">Diplomado en Dermatología Oncológica</p>
+                        <p class="textCurso">2022 Colegio Ibero-américano de Dermatología.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">   <!-- Centro Izquierda -->
+                    <div>
+                        <p class="titleCurso">Diplomado en actualización de enfermedades endocrinas del adulto</p>
+                        <p class="textCurso">2021 Pontificia universidad católica de Chile - Actualziación en patología tiróidea, enfermedades óseas y del metabolismo mineral calcio-fósforo, patólogia hipotálamo-hipofisiaria y del eje suprarrenal, andrología y endocrinología ginecológica.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-CILAD.png">  <!-- Centro -->
+                    <div>
+                        <p class="titleCurso">Diplomado en Tricología</p>
+                        <p class="textCurso">2021 Colegio Ibero-américano de Dermatología.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">  <!-- Centro Derecha -->
+                    <div>
+                        <p class="titleCurso">Diplomado Reumatología</p>
+                        <p class="textCurso">2016 Pontificia universidad católica de Chile - Diplomado actualizaciones en reumatología, Lupus, eritematoso sistémico, artritis reumatoide, artrosis y artritis idiopática juvenil.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Fundacion-ABC.png">   <!-- Derecha    -->
+                    <div>
+                        <p class="titleCurso">Brasil - Fundación ABC Santo André, Sao Paulo</p>
+                        <p class="textCurso">Octubre - Diciembre 2015 (2 meses y medio) Pasantía - Cirugía dermato-oncológica, Cáncer de piel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="SectionCursos"> <!-- Segunda Fila -->
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-CESCH.png">  <!-- Izquierda -->
+                    <div>
+                        <p class="titleCurso">Diplomado Sexualudad</p>
+                        <p class="textCurso">2015 Diplomado Sexualidad Centro de la sexualidad de Chile CESCH.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">  <!-- Centro Izquierda -->
+                    <div>
+                        <p class="titleCurso">Diplomado Farmacología</p>
+                        <p class="textCurso">2014 Pontificia universidad católica de Chile - Diplomado Farmacología Clínica.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Universidad-Catolica.png">  <!-- Centro -->
+                    <div>
+                        <p class="titleCurso">Diplomado Toxicología</p>
+                        <p class="textCurso">2013 Pontificia universidad católica de Chile - Diplomado Toxicología: mención clínica.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Salud-Madrid.png">  <!-- Centro Derecha -->
+                    <div>
+                        <p class="titleCurso">España - Hospital Puerta de hierro, Madrid</p>
+                        <p class="textCurso">Enero - Marzo 2011 (3 meses) Pasantía - Dermatitis de contacto, Psoriasis y dermatoscopía digital.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img class="imgCurso" src="img/Cursos/Logo-Sociedad-medica-santiago.png">  <!-- Derecha -->
+                    <div>
+                        <p class="titleCurso">Curso Actializacuón en medicina interna</p>
+                        <p class="textCurso">2011-2012 Sociedad médica de Santiago (Cardiología, Gastroenterología, Inmunología y Reumatología).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
