@@ -1,8 +1,5 @@
 <?php
-// bot.php
-// Basic Telegram bot with webhook-style update handling
 
-// Replace with your bot token
 $token = '8306368438:AAGa3VcCEJAiD8ic9ZVku0MigzlfZ2di9GU';
 $website = 'https://api.telegram.org/bot' . $token;
 
@@ -25,4 +22,4 @@ switch($message) {
         $response = 'I got your message: ' . ($text === '' ? '[empty]' : $text);
 }
 
-https://api.telegram.org/setWebHooks?url=https://aspirina180mg.github.io/bot.php
+#https://api.telegram.org/setWebHooks?url=https://aspirina180mg.github.io/bot.php
