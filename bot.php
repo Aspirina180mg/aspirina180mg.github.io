@@ -22,4 +22,3 @@ switch($message) {
         $response = 'I got your message: ' . ($text === '' ? '[empty]' : $text);
 }
 
-#https://api.telegram.org/
