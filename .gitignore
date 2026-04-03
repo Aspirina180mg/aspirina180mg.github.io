@@ -1,0 +1,23 @@
+# Archivos de entorno
+.env
+.env.*
+
+# Dependencias (si aplica)
+vendor/
+
+# Archivos temporales
+*.log
+*.tmp
+*.cache
+
+# Configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE/editor
+.vscode/
+.idea/
+
+# Archivos sensibles adicionales
+config.php
+secrets.php

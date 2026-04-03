@@ -1,26 +1,24 @@
 <?php
+$env = parse_ini_file('.env');
 
-$token = '8306368438:AAGa3VcCEJAiD8ic9ZVku0MigzlfZ2di9GU';
-$website = 'https://api.telegram.org/bot' . $token;
+$token = $env['token'];
+$website = $env['api_url'] . $token;
 
 $input = file_get_contents('php://input');
 $data = json_decode($input, TRUE);
 
-$chat_id = $update['message']['chat']['id'];
-$message = $update['message']['text'];
+$chat_id = $data['message']['chat']['id'];
+$message = $data['message']['text'] ?? '';
 
 switch ($message) {
     case '/start':
-        $response = 'Iniciando Bot, un momento...';
-        sendMessage($chat_id, $response);
+        sendMessage($chat_id, 'Iniciando Bot, un momento...');
         break;
     case 'prueba':
-        $response = 'Prueba exitosa';
-        sendMessage($chat_id, $response);
+        sendMessage($chat_id, 'Prueba exitosa');
         break;
     default:
-        $response = 'Comando no reconocido';
-        sendMessage($chat_id, $response);
+        sendMessage($chat_id, 'Comando no reconocido');
         break;
 }
 
@@ -29,18 +27,3 @@ function sendMessage($chat_id, $response)
     $url = $GLOBALS['website'] . '/sendMessage?chat_id=' . $chat_id . '&parse_mode=HTML&text=' . urlencode($response);
     file_get_contents($url);
 }
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
