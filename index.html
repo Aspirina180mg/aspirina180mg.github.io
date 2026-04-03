@@ -6,20 +6,20 @@
     <title>Servicio bot Telegram</title>
 </head>
 <body>
-    <h1>bot.php</h1>
+    <h1>Verificando bot.php</h1>
     <p id="status">Cargando...</p>
 
     <script>
         fetch('/bot.php')
             .then(response => {
                 if (response.ok) {
-                    document.getElementById('status').textContent = 'bot.php is accessible.';
+                    document.getElementById('status').textContent = 'bot.php Online.';
                 } else {
-                    document.getElementById('status').textContent = 'bot.php inaccessible (status: ' + response.status + ').';
+                    document.getElementById('status').textContent = 'bot.php inaccesible (status: ' + response.status + ').';
                 }
             })
             .catch(error => {
-                document.getElementById('status').textContent = 'bot.php inaccessible (error: ' + error.message + ').';
+                document.getElementById('status').textContent = 'bot.php inaccesible (error: ' + error.message + ').';
             });
     </script>
 </body>
