@@ -14,11 +14,11 @@ switch($message) {
         $response = 'Iniciando Bot, un momento...';
         sendMessage($chat_id, $response);
         break;
-    case 'como me ira en la prueba?':
-        $response = 'te irá bien, pero no te confíes';
+    case 'prueba':
+        
         sendMessage($chat_id, $response);
         break;
     default:
-        $response = 'I got your message: ' . ($text === '' ? '[empty]' : $text);
+        $response = 'error';
 }
 
