@@ -22,4 +22,4 @@ switch($message) {
         $response = 'I got your message: ' . ($text === '' ? '[empty]' : $text);
 }
 
-#https://api.telegram.org/setWebHooks?url=https://aspirina180mg.github.io/bot.php
+#https://api.telegram.org/
