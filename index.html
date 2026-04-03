@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check PHP.bot Accessibility</title>
+    <title>Servicio bot Telegram</title>
 </head>
 <body>
-    <h1>Checking PHP.bot Accessibility</h1>
-    <p id="status">Loading...</p>
+    <h1>bot.php</h1>
+    <p id="status">Cargando...</p>
 
     <script>
-        fetch('/PHP.bot')
+        fetch('/bot.php')
             .then(response => {
                 if (response.ok) {
-                    document.getElementById('status').textContent = 'PHP.bot is accessible.';
+                    document.getElementById('status').textContent = 'bot.php is accessible.';
                 } else {
-                    document.getElementById('status').textContent = 'PHP.bot inaccessible (status: ' + response.status + ').';
+                    document.getElementById('status').textContent = 'bot.php inaccessible (status: ' + response.status + ').';
                 }
             })
             .catch(error => {
-                document.getElementById('status').textContent = 'PHP.bot inaccessible (error: ' + error.message + ').';
+                document.getElementById('status').textContent = 'bot.php inaccessible (error: ' + error.message + ').';
             });
     </script>
 </body>
