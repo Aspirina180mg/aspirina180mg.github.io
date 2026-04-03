@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio Funcionando</title>
+    <title>Check PHP.bot Accessibility</title>
 </head>
 <body>
-    <h1>Servicio OK</h1>
+    <h1>Checking PHP.bot Accessibility</h1>
+    <p id="status">Loading...</p>
+
+    <script>
+        fetch('/PHP.bot')
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('status').textContent = 'PHP.bot is accessible.';
+                } else {
+                    document.getElementById('status').textContent = 'PHP.bot inaccessible (status: ' + response.status + ').';
+                }
+            })
+            .catch(error => {
+                document.getElementById('status').textContent = 'PHP.bot inaccessible (error: ' + error.message + ').';
+            });
+    </script>
 </body>
 </html>
-
-<script>
-fetch('bot.php')
-.then(response => {
-    if (response.ok) {
-        document.body.innerHTML += '<p>php.bot online</p>';
-    } else {
-        document.body.innerHTML += '<p>php.bot no encontrado</p>';
-    }
-})
-.catch(() => {
-    document.body.innerHTML += '<p>php.bot no encontrado</p>';
-});
-</script>
